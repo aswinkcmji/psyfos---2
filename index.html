@@ -12,8 +12,11 @@
         <link rel="stylesheet" href="css/swiper-bundle.min.css">
     </head>
     <body>
+
+        <!-- HEADER SECTION START -->
+        
         <header class="py-8 lg:pt-6 lg:pb-14">
-            <div class="container-fluid mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0">
+            <div class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0">
                 <div class="flex justify-center lg:justify-normal">
                     <a href="">
                         <img src="./assets/img/header/logo.png" class="w-28 h-auto" alt="">
@@ -28,11 +31,65 @@
                         <i class="ri-phone-fill text-2xl text-primary"></i>
                         <div class="text-gray-500 font-light">+91 9567803065</div>
                     </div>
-                    <button class="outline outline-1 text-gray-500 text-sm font-light outline-primary w-[240px] lg:w- mx-auto lg:mx-0 py-1 rounded-full">BOOK NOW</button>
-                    <nav ></nav>
+                    <button class="lg:hidden btn btn-outline w-[240px] mx-auto lg:mx-0 py-1 rounded-full">BOOK NOW</button>
+                    
+                    <!-- MOBILE NAV -->
+                    
+                    <nav class="mnav bg-gray-50 fixed w-[300px] top-0 h-screen -left-[300px] shadow-md lg:hidden transition-all duration-300 z-20">
+                        <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full top-8 flex justify-center items-center rounded-tr-lg cursor-pointer transition-all">
+                            <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
+                        </div>
+                        <div class="px-12 flex flex-col gap-y-12 h-full">
+                            <a href="#">
+                                <img src="assets/img/header/logo.png" class="w-28 h-auto" alt="">
+                            </a>
+                            <ul class="flex flex-col gap-y-5">
+                                <li>
+                                    <a href="#" class="text-gray-500 hover:text-primary transition-all duration-300">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500 hover:text-primary transition-all duration-300">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500 hover:text-primary transition-all duration-300">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500 hover:text-primary transition-all duration-300">Our Team</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500 hover:text-primary transition-all duration-300">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <!-- DESKTOP NAV -->
+                    
+                    <nav class="bg-white absolute w-full left-0 -bottom-[86px] shadow-custom1 h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-[50px]">
+                        <ul class="flex gap-x-4">
+                            <li>
+                                <a href="#" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">About us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">Services</a>
+                            </li>
+                            <li>
+                                <a href="#" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-500 hover:text-primary font-light transition-all duration-300">Contact</a>
+                            </li>
+                        </ul>
+                        <button class="btn btn-sm btn-outline w-[240px] lg:w- mx-auto lg:mx-0 py-2 rounded-full">BOOK NOW</button>
+                    </nav>
                 </div>
             </div>
         </header>
+
+        <!-- HEADER SECTION END -->
 
         <!-- Hero start -->
         <section class="hero bg-grey py-12 lg:pt-12 lg:pb-12 overflow-hidden">
@@ -59,19 +116,468 @@
         </section>
         <!-- Hero end -->
 
-        <!-- stats -->
-         <!-- <section class="stats section">
-            <div class="container mx-auto py-12">
-                <div>
-                    <div class="lg:border-r flex flex-col lg:gap-10 gap-7 items-center">
-                        <div class="text-3xl lg:text-[50px] font-semibold text-accent-teritiary">
-                            Why Psyfos?
-                        </div>
-                        <div>Happy Patients</div>
+        <!-- SERVICE SECTION START -->
+
+        <section class="services">
+            <div class="bg-[url('../../assets/img/backgound/background-2.jpg')] bg-cover bg-no-repeat max-w-[1466px] mx-4 xl:mx-auto rounded-[20px] xl:pt-[70px] px-6 xl:px-0 relative h-[368px] flex items-center xl:items-start -z-10">
+                <div class="container mx-auto">
+                    <div class="service__top flex items-center flex-col xl:flex-row xl:mb-[60px]">
+                        <h2 class="h2 text-white">Why choose us?</h2>
+                        <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id cupiditate maiores sapiente explicabo aliquid alias nesciunt, modi voluptatibus sunt. Labore ea maxime sequi, voluptate magni natus. Similique velit quisquam fuga.</p>
                     </div>
                 </div>
             </div>
-         </section> -->
+            <div class="container mx-auto mt-8 md:-mt-[118px]">
+                <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5 px-8 xl:p-0">
+                    <div class="service__item" onclick="openModal('service-1')">
+                        <div class="mb-[15px]">
+                            <i class="ri-psychotherapy-fill text-[2.5rem] text-primary text-opacity-75 "></i>
+                        </div>
+                        <h3 class="h3 mb-[10px]">
+                            Counseling and Psychotherapy
+                        </h3>
+                        <p class="font-light leading-normal max-w-[300px]">
+                            Counseling and Psychotherapy are therapeutic practices
+                            aimed at improving mental health and well-being.
+                        </p>
+                    </div>
+
+                    <div class="service__item" onclick="openModal('service-2')">
+                        <div class="mb-[15px]">
+                            <i class="ri-brain-2-fill text-[2.5rem] text-primary text-opacity-75 "></i>
+                        </div>
+                        <h3 class="h3 mb-[10px]">
+                            Psychological Assessment and Diagnostics
+                        </h3>
+                        <p class="font-light leading-normal max-w-[300px]">
+                            Psychological assessment involves evaluating mental
+                            health, behavior, and cognitive functioning
+                            systematically.
+                        </p>
+                    </div>
+
+                    <div class="service__item" onclick="openModal('service-3')">
+                        <div class="mb-[15px]">
+                            <i class="ri-open-arm-line text-[2.5rem] text-primary text-opacity-75 "></i>
+                        </div>
+                        <h3 class="h3 mb-[10px]">
+                            Child and Adolescent Counseling
+                        </h3>
+                        <p class="font-light leading-normal max-w-[300px]">
+                            Child and adolescent counseling focuses on addressing
+                            unique emotional, behavioral, and developmental needs.
+                        </p>
+                    </div>
+
+                    <div class="service__item" onclick="openModal('service-4')">
+                        <div class="mb-[15px]">
+                            <i class="ri-lightbulb-fill text-[2.5rem] text-primary text-opacity-75 "></i>
+                        </div>
+                        <h3 class="h3 mb-[10px]">
+                            IQ and Learning Disability Assessment
+                        </h3>
+                        <p class="font-light leading-normal max-w-[300px]">
+                            IQ and Learning Disability Assessment evaluates
+                            intellectual capabilities and identifies specific learning
+                            disabilities.
+                        </p>
+                    </div>
+
+                    <div class="service__item" onclick="openModal('service-5')">
+                        <div class="mb-[15px]">
+                            <i class="ri-home-4-fill text-[2.5rem] text-primary text-opacity-75 "></i>
+                        </div>
+                        <h3 class="h3 mb-[10px]">
+                            Family and Couple Therapy
+                        </h3>
+                        <p class="font-light leading-normal max-w-[300px]">
+                            Family and Couple Therapy is a type of psychotherapy that
+                            addresses issues within familial and romantic
+                            relationships.
+                        </p>
+                    </div>
+
+                    <div class="service__item" onclick="openModal('service-6')">
+                        <div class="mb-[15px]">
+                            <i class="ri-book-open-fill text-[2.5rem] text-primary text-opacity-75 "></i>
+                        </div>
+                        <h3 class="h3 mb-[10px]">
+                            Learning Disability Management
+                        </h3>
+                        <p class="font-light leading-normal max-w-[300px]">
+                            Learning Disability Management supports individuals with
+                            tailored strategies to overcome educational challenges.
+                        </p>
+                    </div>
+
+                    <div class="service__item" onclick="openModal('service-7')">
+                        <div class="mb-[15px]">
+                            <i class="ri-user-2-fill text-[2.5rem] text-primary text-opacity-75 "></i>
+                        </div>
+                        <h3 class="h3 mb-[10px]">
+                            Career Counseling and Assessments
+                        </h3>
+                        <p class="font-light leading-normal max-w-[300px]">
+                            Career counseling uses tests for aptitude, personality,
+                            and interests to help people make informed career
+                            decisions.
+                        </p>
+                    </div>
+
+                    <div class="service__item" onclick="openModal('service-8')">
+                        <div class="mb-[15px]">
+                            <i class="ri-building-fill text-[2.5rem] text-primary text-opacity-75 "></i>
+                        </div>
+                        <h3 class="h3 mb-[10px]">
+                            Corporate training
+                        </h3>
+                        <p class="font-light leading-normal max-w-[300px]">
+                            we specialize in leveraging psychological principles 
+                            to create more effective and harmonious workplaces.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 1 MODAL -->
+
+            <div id="service-1" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 ">
+                <div class="relative top-40 mx-auto shadow-xl rounded-md bg-white max-w-xl p-1">
+                    <div class="flex justify-between p-2 border-b items-center">
+                        <h2 class="text-lg font-medium">
+                            Counseling and Psychotherapy
+                        </h2>
+                        <hr class="border-b"/>
+                        <button onclick="closeModal('service-1')" type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                            <i class="ri-close-line text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="p-2 text-sm font-light flex flex-col gap-y-4">
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Counseling
+                            </h1>
+                            <p>
+                                Focuses on providing support and practical strategies for managing stress, relationships, and life changes.
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Psychotherapy
+                            </h1>
+                            <p>
+                                Offers deeper, long-term treatment for issues like anxiety, depression, and trauma through evidence-based techniques.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 2 MODAL -->
+
+            <div id="service-2" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 ">
+                <div class="relative top-40 mx-auto shadow-xl rounded-md bg-white max-w-xl p-1">
+                    <div class="flex justify-between p-2 border-b items-center">
+                        <h2 class="text-lg font-medium">
+                            Psychological Assessment and Diagnostics
+                        </h2>
+                        <hr class="border-b"/>
+                        <button onclick="closeModal('service-2')" type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                            <i class="ri-close-line text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="p-2 text-sm font-light flex flex-col gap-y-4">
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Psychological Assessments
+                            </h1>
+                            <p>
+                                We use a variety of standardized tests and clinical interviews to evaluate cognitive, emotional, and behavioral functioning. 
+                                Our thorough diagnostic evaluations help pinpoint specific mental health conditions, providing a clear understanding of your symptoms and their impact on your daily life.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 3 MODAL -->
+
+            <div id="service-3" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 ">
+                <div class="relative top-40 mx-auto shadow-xl rounded-md bg-white max-w-xl p-1">
+                    <div class="flex justify-between p-2 border-b items-center">
+                        <h2 class="text-lg font-medium">
+                            Child and Adolescent Counseling
+                        </h2>
+                        <hr class="border-b"/>
+                        <button onclick="closeModal('service-3')" type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                            <i class="ri-close-line text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="p-2 text-sm font-light flex flex-col gap-y-4">
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Child Counseling
+                            </h1>
+                            <p>
+                                Our child counseling services address issues like anxiety, depression, and behavioral problems, 
+                                offering a safe space for children to express their feelings and learn coping skills.
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Adolescent Counseling
+                            </h1>
+                            <p>
+                                We support teens dealing with stress, self-esteem issues, and mental health concerns. 
+                                Our adolescent counseling provides a confidential environment to explore their emotions and develop healthy strategies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 4 MODAL -->
+
+            <div id="service-4" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 ">
+                <div class="relative top-40 mx-auto shadow-xl rounded-md bg-white max-w-xl p-1">
+                    <div class="flex justify-between p-2 border-b items-center">
+                        <h2 class="text-lg font-medium">
+                            IQ and Learning Disability Assessment
+                        </h2>
+                        <hr class="border-b"/>
+                        <button onclick="closeModal('service-4')" type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                            <i class="ri-close-line text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="p-2 text-sm font-light flex flex-col gap-y-4">
+                        <div>
+                            <h1 class="text-base font-medium">
+                                IQ Assessments
+                            </h1>
+                            <p>
+                                We use standardized intelligence tests. Understanding IQ can help identify strengths and areas for improvement, aiding in academic and career planning.
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Learning Assessments
+                            </h1>
+                            <p>
+                                Our learning assessments identify specific learning disabilities, such as dyslexia, dyscalculia, and other challenges. 
+                                These assessments help in creating effective educational plans tailored to child's needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 5 MODAL -->
+
+            <div id="service-5" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 ">
+                <div class="relative top-40 mx-auto shadow-xl rounded-md bg-white max-w-xl p-1">
+                    <div class="flex justify-between p-2 border-b items-center">
+                        <h2 class="text-lg font-medium">
+                            Family and Couple Therapy
+                        </h2>
+                        <hr class="border-b"/>
+                        <button onclick="closeModal('service-5')" type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                            <i class="ri-close-line text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="p-2 text-sm font-light flex flex-col gap-y-4">
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Family Therapy
+                            </h1>
+                            <p>
+                                Family therapy helps families navigate challenges and improve their relationships. Our therapists work with 
+                                families to address issues such as communication problems, parenting conflicts, and life transitions.
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Couple Therapy
+                            </h1>
+                            <p>
+                                Our couple therapy focuses on enhancing communication and resolving conflicts between partners. 
+                                Whether you're facing specific issues or simply want to improve your relationship, we're here to help.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 6 MODAL -->
+
+            <div id="service-6" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 ">
+                <div class="relative top-40 mx-auto shadow-xl rounded-md bg-white max-w-xl p-1">
+                    <div class="flex justify-between p-2 border-b items-center">
+                        <h2 class="text-lg font-medium">
+                            Learning Disability Management
+                        </h2>
+                        <hr class="border-b"/>
+                        <button onclick="closeModal('service-6')" type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                            <i class="ri-close-line text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="p-2 text-sm font-light flex flex-col gap-y-4">
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Learning Disability
+                            </h1>
+                            <p>
+                                We provide specialized services to support individuals with learning disabilities. 
+                                Our goal is to help children and adults overcome challenges and achieve their full potential. 
+                                Based on the assessment results, we create tailored intervention plans and offer counseling and 
+                                support for individuals and families to help them navigate the emotional and social impacts of learning disabilities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 7 MODAL -->
+
+            <div id="service-7" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 ">
+                <div class="relative top-40 mx-auto shadow-xl rounded-md bg-white max-w-xl p-1">
+                    <div class="flex justify-between p-2 border-b items-center">
+                        <h2 class="text-lg font-medium">
+                            Comprehensive Career Counselling by Expert
+                        </h2>
+                        <hr class="border-b"/>
+                        <button onclick="closeModal('service-7')" type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                            <i class="ri-close-line text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="p-2 text-sm font-light flex flex-col gap-y-4">
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Psychometric Assessment
+                            </h1>
+                            <p>
+                                5 dimensional career assessment test includes a detailed analysis of personality, interest, career motivators, 
+                                learning style and abilities.
+                                It is a highly accurate and reliable assessment and based on well-proven psychometric theories.
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Comprehensive Career Report
+                            </h1>
+                            <p>
+                                22+ pages comprehensive career report provides a clear recommendation of the most suitable career option.
+                                Career report is not only limited to find out the most suitable career option but also offer detailed 
+                                education road map with the execution plan.
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Career assessments
+                            </h1>
+                            <ul class="list-none">
+                                <li>
+                                    ▪️ Career Analysis for 8th, 9th & 10th Class It will help you to find out most suitable career path and subjects
+                                </li>
+                                <li>
+                                    ▪️ Career Analysis for 11th & 12th Class It will help you to find out most suitable career path and career road map with detailed execution plan
+                                </li>
+                                <li>
+                                    ▪️ Career Analysis for Graduates It will help you to find out Most Suitable Career path and Career Road map with detailed execution plan
+                                </li>
+                                <li>
+                                    ▪️ Career Analysis for Professionals Early and Mid career counselling for professionals with detailed execution plan
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 8 MODAL -->
+
+            <div id="service-8" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 ">
+                <div class="relative top-40 mx-auto shadow-xl rounded-md bg-white max-w-xl p-1">
+                    <div class="flex justify-between p-2 border-b items-center">
+                        <h2 class="text-lg font-medium">
+                            Corporate training
+                        </h2>
+                        <hr class="border-b"/>
+                        <button onclick="closeModal('service-8')" type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                            <i class="ri-close-line text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="p-2 text-sm font-light flex flex-col gap-y-2">
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Stress Management
+                            </h1>
+                            <p>
+                                Equip your team with techniques to manage stress and maintain mental health.
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Emotional Intelligence
+                            </h1>
+                            <p>
+                                Develop emotional intelligence skills to improve communication and teamwork.
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Leadership Development
+                            </h1>
+                            <p>
+                                Foster strong leadership grounded in psychological principles.
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Conflict Resolution
+                            </h1>
+                            <p>
+                                Teach effective conflict resolution strategies to create a more collaborative workplace.
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Mindfulness Training
+                            </h1>
+                            <p>
+                                Introduce mindfulness practices to enhance focus and productivity.
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Work-Life Balance
+                            </h1>
+                            <p>
+                                Provide strategies to help employees balance their professional and personal lives.
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="text-base font-medium">
+                                Custom Training Solutions
+                            </h1>
+                            <p>
+                                Tailored programs to meet your specific business needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- SERVICE SECTION END -->
 
         <section class="team section bg-grey pb-10">
                      
@@ -249,7 +755,93 @@
             </div>
         </section>
 
-        <div class="h-[4000px]"></div>
+        <!-- FOOTER SECTION START -->
+        <footer class="footer pt-12 xl:pt-[150px] bg-primary bg-opacity-5">
+            <div class="container mx-auto pb-12 xl:pb-[100px]">
+                <div class="flex flex-col xl:flex-row gap-x-5 gap-y-10">
+                    <div class="footer__item flex-1">
+                        <a href="">
+                            <img src="./assets/img/header/logo.png" class="w-28 h-auto" alt="">
+                        </a>
+                        <p class="mb-[20px] font-light text-gray-500">
+                            Counselling & Psychotherapy
+                        </p>
+                        <div class="flex flex-col gap-y-3 mb-10">
+                            <div class="flex gap-x-3 items-center">
+                                <i class="ri-map-pin-2-fill text-xl text-primary"></i> 
+                                <div class="font-light text-gray-500">Pulikal Tower, Court Road Manjeri</div>
+                            </div>
+                            <div class="flex gap-x-3 items-center">
+                                <i class="ri-mail-fill text-xl text-primary"></i>
+                                <div class="font-light text-gray-500">
+                                    info@psyfos.in, 
+                                    psyfosofficial@gmail.com
+                                </div>
+                            </div>
+                            <div class="flex gap-x-3 items-center">
+                                <i class="ri-phone-fill text-xl text-primary"></i>
+                                <div class="font-light text-gray-500">
+                                    +91 956 780 3065, 
+                                    +91 828 167 5706
+                                </div>
+                            </div>
+                            <div class="flex flex-row gap-x-4">
+                                <div class="text-3xl text-accent-teritiary hover:text-primary cursor-pointer transition-all">
+                                    <i class="ri-whatsapp-fill"></i>
+                                </div>
+                                <div class="text-3xl text-accent-teritiary hover:text-primary cursor-pointer transition-all">
+                                    <i class="ri-facebook-circle-fill"></i>
+                                </div>
+                                <div class="text-3xl text-accent-teritiary hover:text-primary cursor-pointer transition-all">
+                                    <i class="ri-instagram-fill"></i>   
+                                </div>
+                                <div class="text-3xl text-accent-teritiary hover:text-primary cursor-pointer transition-all">
+                                    <i class="ri-twitter-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__item flex-1 xl:text-center">
+                        <h4 class="mb-4">
+                            Quick Links
+                        </h4>
+                        <div>
+                            <ul class="space-y-4 font-light text-gray-500 ">
+                                <li><a href="" class="hover:text-primary transition-all">Home</a></li>
+                                <li><a href="" class="hover:text-primary transition-all">Services</a></li>
+                                <li><a href="" class="hover:text-primary transition-all">Team</a></li>
+                                <li><a href="" class="hover:text-primary transition-all">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__item flex-1">
+                        <h4 class="mb-4">
+                            Opening Hours
+                        </h4>
+                        <div class="flex flex-col gap-y-6">
+                            <div class="flex border-b border-gray-200 font-light text-gray-500 justify-between">
+                                <div>Monday - Wednesday</div>
+                                <div class="text-primary">8:00 AM - 6:00PM</div>
+                            </div>
+                            <div class="flex border-b border-gray-200 font-light text-gray-500 justify-between">
+                                <div>Thursday - Saturday</div>
+                                <div class="text-primary">7:00 AM - 1:00PM</div>
+                            </div>
+                            <div class="flex border-b border-gray-200 font-light text-gray-500 justify-between">
+                                <div>Sunday</div>
+                                <div class="text-primary">Week Off</div>
+                            </div>
+                            <div class="flex border-b border-gray-200 font-light text-gray-500 justify-between">
+                                <div>Personal</div>
+                                <div class="text-primary">7:00 AM - 1:00PM</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER SECTION END -->
 
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/scrollreveal.min.js"></script>
