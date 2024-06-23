@@ -46,3 +46,40 @@ document.onkeydown = function(event) {
         })
     }
 };
+
+const sr = ScrollReveal({
+    origin: 'bottom',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+})
+
+sr.reveal('.hero__text', {origin: 'top'});
+sr.reveal('.hero__img');
+sr.reveal('.services',{
+    delay: 100,
+    distance: '100px',
+    iterval: 80,
+    origin: 'top',
+});
+sr.reveal('.service__top',{
+    delay: 100,
+    distance: '100px',
+    iterval: 80,
+    origin: 'top',
+});
+sr.reveal('.service__item',{
+    delay: 100,
+    distance: '100px',
+    iterval: 80,
+    origin: 'top',
+});
+sr.reveal('.team__title')
+sr.reveal('.team__slider')
+
+sr.reveal('.footer__item', {
+    delay: 100,
+    distance: '50px',
+    iterval: 80,
+    origin: 'bottom', 
+})
