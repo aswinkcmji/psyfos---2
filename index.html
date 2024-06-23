@@ -45,19 +45,22 @@
                             </a>
                             <ul class="flex flex-col gap-y-5">
                                 <li>
-                                    <a href="#" class="text-gray-500 hover:text-primary transition-all duration-300">Home</a>
+                                    <a href="#home" class="text-gray-500 hover:text-primary transition-all duration-300">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-gray-500 hover:text-primary transition-all duration-300">About us</a>
+                                    <a href="#services" class="text-gray-500 hover:text-primary transition-all duration-300">About us</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-gray-500 hover:text-primary transition-all duration-300">Services</a>
+                                    <a href="#services" class="text-gray-500 hover:text-primary transition-all duration-300">Services</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-gray-500 hover:text-primary transition-all duration-300">Our Team</a>
+                                    <a href="#team" class="text-gray-500 hover:text-primary transition-all duration-300">Our Team</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-gray-500 hover:text-primary transition-all duration-300">Contact</a>
+                                    <a href="#gallery" class="text-gray-500 hover:text-primary transition-all duration-300">Activities</a>
+                                </li>
+                                <li>
+                                    <a href="#footer" class="text-gray-500 hover:text-primary transition-all duration-300">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -68,19 +71,22 @@
                     <nav class="bg-white absolute w-full left-0 -bottom-[86px] shadow-custom1 h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-[50px]">
                         <ul class="flex gap-x-4">
                             <li>
-                                <a href="#" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">Home</a>
+                                <a href="#home" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">Home</a>
                             </li>
                             <li>
-                                <a href="#" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">About us</a>
+                                <a href="#services" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">About us</a>
                             </li>
                             <li>
-                                <a href="#" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">Services</a>
+                                <a href="#services" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">Services</a>
                             </li>
                             <li>
-                                <a href="#" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">Our Team</a>
+                                <a href="#team" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">Our Team</a>
                             </li>
                             <li>
-                                <a href="#" class="text-gray-500 hover:text-primary font-light transition-all duration-300">Contact</a>
+                                <a href="#gallery" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">Activities</a>
+                            </li>
+                            <li>
+                                <a href="#footer" class="text-gray-500 hover:text-primary font-light transition-all duration-300">Contact</a>
                             </li>
                         </ul>
                         <button class="btn btn-sm btn-outline w-[240px] lg:w- mx-auto lg:mx-0 py-2 rounded-full">BOOK NOW</button>
@@ -93,10 +99,10 @@
 
         <!-- HERO SECTION START -->
 
-        <section class="hero bg-grey py-12 lg:pt-12 pb-12 overflow-hidden mb-6">
+        <section id="home" class="hero bg-grey py-12 lg:pt-12 pb-12 overflow-hidden mb-6">
             <div class="container mx-auto h-full">
                 <div class="flex flex-col lg:flex-row items-center justify-between h-full">
-                    <div class="hero__text lg:w-[48%] text-center lg:text-left">
+                    <div class="hero__text lg:w-[48%] text-center lg:text-left reveal">
                         <!--badge-->
                         <div class="flex items-center bg-white py-[10px] px-[20px] w-max gap-x-2 mb-[26px] rounded-full mx-auto lg:mx-0">
                             <!-- badge icon -->
@@ -109,7 +115,7 @@
                         <p class="mb-[42px] md:max-w-xl:">this is the desc that i'm gonna use. this is some random gibbersh</p>
                         <button class="btn btn-lg btn-accent mx-auto lg:mx-0">Contact Us</button>
                     </div>
-                    <div class="hero__img hidden lg:flex max-w-[600px] self-end">
+                    <div class="hero__img hidden lg:flex max-w-[600px] self-end reveal">
                         <img src="./assets/img/adult-women-discussing-new-project.jpg" alt="pysfos home page" />
                     </div>
                 </div>
@@ -120,7 +126,7 @@
 
         <!-- SERVICE SECTION START -->
 
-        <section class="services mb-[50px]">
+        <section id="services" class="services mb-[50px]">
             <div style="background-image: url('./assets/img/backgound/background-2.jpg');" class="bg-cover bg-no-repeat rounded-[20px] max-w-[1466px] mx-4 xl:mx-auto xl:pt-[70px] px-6 xl:px-0 relative min-h-[400px] flex items-center xl:items-start -z-10 py-10 ">
                 <div class="container mx-auto">
                     <div class="service__top flex items-center flex-col xl:flex-row xl:mb-[60px]">
@@ -602,7 +608,7 @@
 
         <!-- TEAM SECTION START -->
 
-        <section class="team section mb-[50px]">
+        <section id="team" class="team section mb-[50px]">
             <div class="container mx-auto hidden sm:block">
                 <h2 class="team__title h2 mb-[50px] text-center xl:text-left">
                     Our Team
@@ -805,7 +811,7 @@
 
         <!-- BLOG SECTION START -->
         
-        <section class="blog">
+        <section id="gallery" class="blog" >
             <div class="container mx-auto">
                 <h2 class="blog__title h2 mb-[50px] text-center xl:text-left">
                     Our recent activities
@@ -890,7 +896,7 @@
         <!-- BLOG SECTION END -->
 
         <!-- FOOTER SECTION START -->
-        <footer class="footer pt-12 xl:pt-[150px] bg-primary bg-opacity-5">
+        <footer id="footer" class="footer pt-12 xl:pt-[150px] bg-primary bg-opacity-5">
             <div class="container mx-auto pb-12 xl:pb-[100px]">
                 <div class="flex flex-col xl:flex-row gap-x-5 gap-y-10">
                     <div class="footer__item flex-1">
@@ -941,10 +947,10 @@
                         </h4>
                         <div>
                             <ul class="space-y-4 font-light text-gray-500 ">
-                                <li><a href="" class="hover:text-primary transition-all">Home</a></li>
-                                <li><a href="" class="hover:text-primary transition-all">Services</a></li>
-                                <li><a href="" class="hover:text-primary transition-all">Team</a></li>
-                                <li><a href="" class="hover:text-primary transition-all">Blog</a></li>
+                                <li><a href="#home" class="hover:text-primary transition-all">Home</a></li>
+                                <li><a href="#services" class="hover:text-primary transition-all">Services</a></li>
+                                <li><a href="#team" class="hover:text-primary transition-all">Team</a></li>
+                                <li><a href="#gallery" class="hover:text-primary transition-all">Activities</a></li>
                             </ul>
                         </div>
                     </div>

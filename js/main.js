@@ -63,12 +63,22 @@ const swiper = new Swiper('.swiper', {
 const sr = ScrollReveal({
     origin: 'bottom',
     distance: '60px',
-    duration: 2500,
+    duration: 2000,
     delay: 400,
 })
 
-sr.reveal('.hero__text', {origin: 'top'});
-sr.reveal('.hero__img');
+sr.reveal('.hero__text', {
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 400,
+});
+sr.reveal('.hero__img',{
+    origin: 'bottom',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+});
 sr.reveal('.services',{
     delay: 100,
     distance: '100px',
@@ -91,6 +101,20 @@ sr.reveal('.team__title')
 sr.reveal('.team__slider')
 
 sr.reveal('.footer__item', {
+    delay: 100,
+    distance: '50px',
+    iterval: 80,
+    origin: 'bottom', 
+})
+
+sr.reveal('.blog__title', {
+    delay: 100,
+    distance: '50px',
+    iterval: 80,
+    origin: 'bottom', 
+})
+
+sr.reveal('.blog__post', {
     delay: 100,
     distance: '50px',
     iterval: 80,
