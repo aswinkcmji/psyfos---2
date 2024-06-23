@@ -91,8 +91,9 @@
 
         <!-- HEADER SECTION END -->
 
-        <!-- Hero start -->
-        <section class="hero bg-grey py-12 lg:pt-12 lg:pb-12 overflow-hidden">
+        <!-- HERO SECTION START -->
+
+        <section class="hero bg-grey py-12 lg:pt-12 pb-12 overflow-hidden mb-6">
             <div class="container mx-auto h-full">
                 <div class="flex flex-col lg:flex-row items-center justify-between h-full">
                     <div class="hero__text lg:w-[48%] text-center lg:text-left">
@@ -114,21 +115,41 @@
                 </div>
             </div>
         </section>
-        <!-- Hero end -->
+        
+        <!-- HERO SECTION END -->
 
         <!-- SERVICE SECTION START -->
 
-        <section class="services">
-            <div class="bg-[url('../../assets/img/backgound/background-2.jpg')] bg-cover bg-no-repeat max-w-[1466px] mx-4 xl:mx-auto rounded-[20px] xl:pt-[70px] px-6 xl:px-0 relative h-[368px] flex items-center xl:items-start -z-10">
+        <section class="services mb-[50px]">
+            <div class="bg-[url('../../assets/img/backgound/background-2.jpg')] bg-cover bg-no-repeat rounded-[20px] max-w-[1466px] mx-4 xl:mx-auto xl:pt-[70px] px-6 xl:px-0 relative min-h-[400px] flex items-center xl:items-start -z-10 py-10 ">
                 <div class="container mx-auto">
                     <div class="service__top flex items-center flex-col xl:flex-row xl:mb-[60px]">
-                        <h2 class="h2 text-white">Why choose us?</h2>
-                        <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id cupiditate maiores sapiente explicabo aliquid alias nesciunt, modi voluptatibus sunt. Labore ea maxime sequi, voluptate magni natus. Similique velit quisquam fuga.</p>
+                        <h2 class="h2 text-white pr-4">Why choose us?</h2>
+                        <ul class="font-light">
+                            <li>
+                                <span class="font-medium text-lg">Expert Psychologists - </span> &nbsp; Our programs are developed and delivered by experienced psychologists.
+                            </li>
+                            <li>
+                                <span class="font-medium text-lg">Evidence-Based Training - </span> &nbsp; Our methods are grounded in the latest psychological research.
+                            </li>
+                            <li>
+                                <span class="font-medium text-lg">Customized Programs - </span> &nbsp; We tailor our training to address your unique organizational challenges.
+                            </li>
+                            <li>
+                                <span class="font-medium text-lg">Holistic Approach - </span> We focus on both mental well-being and professional skills.
+                            </li>
+                            <li>
+                                <span class="font-medium text-lg">Proven Outcomes - </span> Our training has a track record of enhancing employee performance and satisfaction.
+                            </li>
+                            <li>
+                                <span class="font-medium text-lg">Flexible Delivery - </span> Online, in-person, or blended learning options to suit your needs.
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="container mx-auto mt-8 md:-mt-[118px]">
-                <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5 px-8 xl:p-0">
+            <div class="container mx-auto mt-8 md:-mt-[28px] lg:-mt-[48px] xl:-mt-[98px]">
+                <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5 xl:p-0">
                     <div class="service__item" onclick="openModal('service-1')">
                         <div class="mb-[15px]">
                             <i class="ri-psychotherapy-fill text-[2.5rem] text-primary text-opacity-75 "></i>
@@ -502,7 +523,7 @@
 
             <!-- SERVICE 8 MODAL -->
 
-            <div id="service-8" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 ">
+            <div id="service-8" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4">
                 <div class="relative top-40 mx-auto shadow-xl rounded-md bg-white max-w-xl p-1">
                     <div class="flex justify-between p-2 border-b items-center">
                         <h2 class="text-lg font-medium">
@@ -579,181 +600,294 @@
 
         <!-- SERVICE SECTION END -->
 
-        <section class="team section bg-grey pb-10">
-                     
-            <div class="container mx-auto px-0 lg:px-32 py-10 hidden  lg:block bg-white shadow-orange-600 rounded-3xl">
-                <h2 class="team__title  h2 mb-[50px] text-center ">
+        <!-- TEAM SECTION START -->
+
+        <section class="team section mb-[50px]">
+            <div class="container mx-auto hidden sm:block">
+                <h2 class="team__title h2 mb-[50px] text-center xl:text-left">
                     Our Team
                 </h2>
-                <div class="container-fluid">
-                    <div class="grid grid-cols-2 gap-3">
-                      <!-- Child 1 -->
-                      <div class="bg-white p-4 shadow-md flex">
-                        <div class="flex-shrink-0">
-                          <img src="assets/img/imageedit_2_5289963143.jpg" alt="Image" class="h-48 w-40 object-fit rounded">
+                <div class="team__slider swiper min-h-[400px]">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="flex-1 flex flex-col sm:flex-row shadow-custom1 rounded-b-md gap-8">
+                                <div class="flex flex-1 flex-col xl:flex-row items-start xl:items-center text-left gap-[30px]">
+                                    <div class="flex-1">
+                                        <img class="min-w-48 h-auto object-cover rounded-t-md" src="assets/img/team/aslam.jpg" alt="">
+                                    </div>
+                                    <div class="flex-1 flex flex-col p-2">
+                                        <h4 class="h4 mb-[10px]">Aslam Siddiq P</h4>
+                                        <div class="font-medium uppercase text-sm tracking-[2.24px] text-gray-500 mb-[20px]">
+                                            Clinical Psychologist
+                                        </div>
+                                        <p class="font-extralight mb-[26px] max-w-[320px] text-sm">
+                                            MSc,MPhil(cli.psy)
+                                            CRR.No.A57288
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-1 flex-col xl:flex-row items-start xl:items-center text-left gap-[30px]">
+                                    <div class="flex-1 rou">
+                                        <img class="min-w-48 h-auto object-cover rounded-t-md" src="assets/img/team/hiba.jpg" alt="">
+                                    </div>
+                                    <div class="flex-1 flex flex-col p-2">
+                                        <h4 class="h4 mb-[10px]">Fathima Hiba P</h4>
+                                        <div class="font-medium uppercase text-sm tracking-[2.24px] text-gray-500 mb-[20px]">
+                                            Consultant psychologist
+                                        </div>
+                                        <p class="font-extralight mb-[26px] max-w-[320px] text-sm">
+                                            MSc psychology
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ml-4 my-auto">
-                          <h2 class="text-lg font-semibold">ASLAM SIDDIQ P</h2>
-                          <p><span class="font-medium text-base uppercase text-[#9ab4b7]">Clinical Psychologist </span><br>
-                            Msc,MPhil(cli.psy) <br>
-                            CRR.No.A57288</p>
+                        <div class="swiper-slide">
+                            <div class="flex-1 flex flex-col sm:flex-row shadow-custom1 rounded-b-md gap-8">
+                                <div class="flex flex-1 flex-col xl:flex-row items-start xl:items-center text-left gap-[30px]">
+                                    <div class="flex-1 rou">
+                                        <img class="min-w-48 h-auto object-cover rounded-t-md" src="assets/img/team/riyas.jpeg" alt="">
+                                    </div>
+                                    <div class="flex-1 flex flex-col p-2">
+                                        <h4 class="h4 mb-[10px]">Riyas</h4>
+                                        <div class="font-medium uppercase text-sm tracking-[2.24px] text-gray-500 mb-[20px]">
+                                            Consultant psychologist
+                                        </div>
+                                        <p class="font-extralight mb-[26px] max-w-[320px] text-sm">
+                                            MSc clinical psychology
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-1 flex-col xl:flex-row items-start xl:items-center text-left gap-[30px]">
+                                    <div class="flex-1 rou">
+                                        <img class="min-w-48 h-auto object-cover rounded-t-md" src="assets/img/team/munavar.jpg" alt="">
+                                    </div>
+                                    <div class="flex-1 flex flex-col p-2">
+                                        <h4 class="h4 mb-[10px]">Munavar Ali K K</h4>
+                                        <div class="font-medium uppercase text-sm tracking-[2.24px] text-gray-500 mb-[20px]">
+                                            Psychologist & Career Counselor
+                                        </div>
+                                        <p class="font-extralight mb-[26px] max-w-[320px] text-sm">
+                                            Msc psychology
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                
-                      <!-- Child 2 -->
-                      <div class="bg-white p-4 shadow-md flex">
-                        <div class="flex-shrink-0">
-                          <img src="assets/img/06689745-6124-441c-9c04-f3e1ee713a90.jpg" alt="Image" class="h-48 w-40 object-fit rounded">
+                        <div class="swiper-slide">
+                            <div class="flex-1 flex flex-col sm:flex-row shadow-custom1 rounded-b-md gap-8">
+                                <div class="flex sm:flex-[0.5] flex-col xl:flex-row items-start xl:items-center text-left gap-[30px]">
+                                    <div class="flex-1">
+                                        <img class="min-w-48 h-auto object-cover rounded-t-md" src="assets/img/team/unknown.jpg" alt="">
+                                    </div>
+                                    <div class="flex-1 flex flex-col p-2">
+                                        <h4 class="h4 mb-[10px]">Aaisha Nihala T</h4>
+                                        <div class="font-medium uppercase text-sm tracking-[2.24px] text-gray-500 mb-[20px]">
+                                            Consultant Psychologist
+                                        </div>
+                                        <p class="font-extralight mb-[26px] max-w-[320px] text-sm">
+                                            M.Sc. Clinical Psychology
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ml-4 my-auto">
-                          <h2 class="text-lg font-semibold">FATHIMA HIBA P</h2>
-                          <p><span class="font-medium text-base uppercase text-[#9ab4b7]">Consultant psychologist </span><br>
-                            Msc psychology</p>
-                        </div>
-                      </div>
-                
-                      <!-- Child 3 -->
-                      <div class="bg-white p-4 shadow-md flex">
-                        <div class="flex-shrink-0">
-                          <img src="assets/img/IMG_20200407_214342.jpg" alt="Image" class="h-48 w-40 object-fit rounded">
-                        </div>
-                        <div class="ml-4 my-auto">
-                          <h2 class="text-lg font-semibold">RIYAS</h2>
-                          <p><span class="font-medium text-base uppercase text-[#9ab4b7]">Consultant psychologist </span><br>
-                            Msc clinical psychology</p>
-                        </div>
-                      </div>
-                      <div class="bg-white p-4 shadow-md flex">
-                        <div class="flex-shrink-0">
-                          <img src="assets/img/xvc.jpg" alt="Image" class="h-48 w-40 object-fit rounded">
-                        </div>
-                        <div class="ml-4 my-auto">
-                          <h2 class="text-lg font-semibold ">MUNAVAR ALI K K</h2>
-                          <p><span class="font-medium text-base uppercase tracking-[2.24px] text-[#9ab4b7]">Psychologist & Career Counselor</span> <br>
-                            Msc psychology</p>
-                        </div>
-                      </div>
-                      <div class="bg-white p-4 shadow-md flex">
-                        <div class="flex-shrink-0">
-                          <img src="assets/img/imageedit_2_5289963143.jpg" alt="Image" class="h-48 w-40 object-fit rounded">
-                        </div>
-                        <div class="ml-4 my-auto">
-                          <h2 class="text-lg font-semibold">AAISHA NIHALA T</h2>
-                          <p><span class="font-medium text-base uppercase text-[#9ab4b7]">Consultant psychologist</span> <br>
-                            MSc clinical psychology</p>
-                        </div>
-                      </div>
                     </div>
-                </div>   
+                    <div class="swiper-pagination">
+                    </div>
+                </div>
             </div>
-            <div class="container mx-auto p-32 bg-white lg:hidden">
-                <h2 class="team__title  h2 mb-[50px] text-center lg:text-left">
+            <div class="container mx-auto sm:hidden">
+                <h2 class="team__title h2 mb-[50px] text-center xl:text-left">
                     Our Team
                 </h2>
-
-                <!-- slidebar -->
-                 <div class="team__slidebar swiper shadow pt-5">
-                    <div class="swiper-wrapper pb-5">
-                        <div class="swiper-slide mt-5">
-                            <div class="flex flex-col md:flex-row gap-9">
-                                <div class="flex-1 flex flex-col lg:flex-row">
-                                    <div class="flex flex-col lg:flex-row items-center gap-[30px]">
-                                        <div class="flex-1">
-                                            <img class="w-48 h-auto object-contain" src="assets/img/imageedit_2_5289963143.jpg" alt="">
+                <div class="team__slider swiper min-h-[400px]">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="flex-1 flex flex-col sm:flex-row shadow-custom1 rounded-b-md gap-8">
+                                <div class="flex flex-1 flex-col xl:flex-row items-start xl:items-center text-left gap-[30px]">
+                                    <div class="flex-1">
+                                        <img class="min-w-48 h-auto object-cover rounded-t-md" src="assets/img/team/aslam.jpg" alt="">
+                                    </div>
+                                    <div class="flex-1 flex flex-col p-2">
+                                        <h4 class="h4 mb-[10px]">Aslam Siddiq P</h4>
+                                        <div class="font-medium uppercase text-sm tracking-[2.24px] text-gray-500 mb-[20px]">
+                                            Clinical Psychologist
                                         </div>
-                                        <div class="flex-1 flex flex-col text-center">
-                                            <h4 class="h4 mb-[10px]" >ASLAM SIDDIQ P</h4>
-                                            <div class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-[1px]">Clinical Psychologist</div>
-                                            <p class="font-light mb-[26px] max-w-[3]">
-                                                Msc,MPhil(cli.psy) <br>
-                                                CRR.No.A57288
-                                            </p>
-                                        </div>
+                                        <p class="font-extralight mb-[26px] max-w-[320px] text-sm">
+                                            MSc,MPhil(cli.psy)
+                                            CRR.No.A57288
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide mt-5">
-                            <div class="flex flex-col md:flex-row gap-9">
-                                <div class="flex-1 flex flex-col lg:flex-row">
-                                    <div class="flex flex-col lg:flex-row items-center gap-[30px]">
-                                        <div class="flex-1">
-                                            <img class="w-48 h-auto object-contain" src="assets/img/06689745-6124-441c-9c04-f3e1ee713a90.jpg" alt="">
+                        <div class="swiper-slide">
+                            <div class="flex-1 flex flex-col sm:flex-row shadow-custom1 rounded-b-md">
+                                <div class="flex flex-col xl:flex-row items-start xl:items-center text-left gap-[30px]">
+                                    <div class="flex-1 rou">
+                                        <img class="min-w-48 h-auto object-cover rounded-t-md" src="assets/img/team/hiba.jpg" alt="">
+                                    </div>
+                                    <div class="flex-1 flex flex-col p-2">
+                                        <h4 class="h4 mb-[10px]">Fathima Hiba P</h4>
+                                        <div class="font-medium uppercase text-sm tracking-[2.24px] text-gray-500 mb-[20px]">
+                                            Consultant psychologist
                                         </div>
-                                        <div class="flex-1 flex flex-col text-center">
-                                            <h4 class="h4 mb-[10px]" > FATHIMA HIBA P</h4>
-                                            <div class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-[1px]">CONSULTANT PSYCHOLOGIST</div>
-                                            <p class="font-light mb-[26px] max-w-[3]">
-                                                Msc psychology
-                                            </p>
-                                        </div>
+                                        <p class="font-extralight mb-[26px] max-w-[320px] text-sm">
+                                            MSc psychology
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="swiper-slide mt-5">
-                            <div class="flex flex-col md:flex-row gap-9">
-                                <div class="flex-1 flex flex-col lg:flex-row">
-                                    <div class="flex flex-col lg:flex-row items-center gap-[30px]">
-                                        <div class="flex-1">
-                                            <img class="w-48 h-auto object-contain" src="assets/img/IMG_20200407_214342.jpg" alt="">
+                        <div class="swiper-slide">
+                            <div class="flex-1 flex flex-col sm:flex-row shadow-custom1 rounded-b-md gap-8">
+                                <div class="flex flex-1 flex-col xl:flex-row items-start xl:items-center text-left gap-[30px]">
+                                    <div class="flex-1 rou">
+                                        <img class="min-w-48 h-auto object-cover rounded-t-md" src="assets/img/team/riyas.jpeg" alt="">
+                                    </div>
+                                    <div class="flex-1 flex flex-col p-2">
+                                        <h4 class="h4 mb-[10px]">Riyas</h4>
+                                        <div class="font-medium uppercase text-sm tracking-[2.24px] text-gray-500 mb-[20px]">
+                                            Consultant psychologist
                                         </div>
-                                        <div class="flex-1 flex flex-col text-center">
-                                            <h4 class="h4 mb-[10px]" > RIYAS</h4>
-                                            <div class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-[1px]">Consultant psychologist</div>
-                                            <p class="font-light mb-[26px] max-w-[3]">
-                                                MSc clinical psychology
-                                            </p>
-                                        </div>
+                                        <p class="font-extralight mb-[26px] max-w-[320px] text-sm">
+                                            MSc clinical psychology
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="swiper-slide mt-5">
-                            <div class="flex flex-col md:flex-row gap-9">
-                                <div class="flex-1 flex flex-col lg:flex-row">
-                                    <div class="flex flex-col lg:flex-row items-center gap-[30px]">
-                                        <div class="flex-1">
-                                            <img class="w-48 h-auto object-contain" src="assets/img/xvc.jpg" alt="">
+                        <div class="swiper-slide">
+                            <div class="flex-1 flex flex-col sm:flex-row shadow-custom1 rounded-b-md">
+                                <div class="flex flex-col xl:flex-row items-start xl:items-center text-left gap-[30px]">
+                                    <div class="flex-1 rou">
+                                        <img class="min-w-48 h-auto object-cover rounded-t-md" src="assets/img/team/munavar.jpg" alt="">
+                                    </div>
+                                    <div class="flex-1 flex flex-col p-2">
+                                        <h4 class="h4 mb-[10px]">Munavar Ali K K</h4>
+                                        <div class="font-medium uppercase text-sm tracking-[2.24px] text-gray-500 mb-[20px]">
+                                            Psychologist & Career Counselor
                                         </div>
-                                        <div class="flex-1 flex flex-col text-center">
-                                            <h4 class="h4 mb-[10px]" >MUNAVAR ALI K K</h4>
-                                            <div class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-[1px]">Psychologist & Career Counselor</div>
-                                            <p class="font-light mb-[26px] max-w-[3]">
-                                                Msc psychology
-                                            </p>
-                                        </div>
+                                        <p class="font-extralight mb-[26px] max-w-[320px] text-sm">
+                                            Msc psychology
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="swiper-slide mt-5">
-                            <div class="flex flex-col md:flex-row gap-9">
-                                <div class="flex-1 flex flex-col lg:flex-row">
-                                    <div class="flex flex-col lg:flex-row items-center gap-[30px]">
-                                        <div class="flex-1">
-                                            <img class="w-48 h-auto object-contain" src="assets/img/imageedit_2_5289963143.jpg" alt="">
+                        <div class="swiper-slide">
+                            <div class="flex-1 flex flex-col sm:flex-row shadow-custom1 rounded-b-md gap-8">
+                                <div class="flex sm:flex-[0.5] flex-col xl:flex-row items-start xl:items-center text-left gap-[30px]">
+                                    <div class="flex-1">
+                                        <img class="min-w-48 h-auto object-cover rounded-t-md" src="assets/img/team/unknown.jpg" alt="">
+                                    </div>
+                                    <div class="flex-1 flex flex-col p-2">
+                                        <h4 class="h4 mb-[10px]">Aaisha Nihala T</h4>
+                                        <div class="font-medium uppercase text-sm tracking-[2.24px] text-gray-500 mb-[20px]">
+                                            Consultant Psychologist
                                         </div>
-                                        <div class="flex-1 flex flex-col text-center">
-                                            <h4 class="h4 mb-[10px]" >AAISHA NIHALA T</h4>
-                                            <div class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-[1px]">Consultant Psychologist</div>
-                                            <p class="font-light mb-[26px] max-w-[3]">
-                                                MSc clinical psychology
-                                            </p>
-                                        </div>
+                                        <p class="font-extralight mb-[26px] max-w-[320px] text-sm">
+                                            M.Sc. Clinical Psychology
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    <div class="swiper-pagination"></div>
-                 </div>
+                    <div class="swiper-pagination">
+                    </div>
+                </div>
             </div>
         </section>
+
+        <!-- TEAM SECTION END -->
+
+        <!-- BLOG SECTION START -->
+        
+        <section class="blog">
+            <div class="container mx-auto">
+                <h2 class="blog__title h2 mb-[50px] text-center xl:text-left">
+                    Our recent activities
+                </h2>
+                <div class="flex flex-row gap-6 justify-center xl:gap-3 mb-[50px] flex-wrap">
+                    <div class="blog__post max-w-[420px] shadow-custom2 rounded-lg overflow-hidden cursor-pointer group">
+                        <div class="relative overflow-hidden w-full max-h-[300px] shadow-custom1">
+                            <img class="group-hover:scale-110 transition-all object-cover object-center duration-500" src="./assets/img/IMG_20240622_200257_025.JPG" alt="">
+                            <div class="bg-accent-teritiary absolute bottom-0 left-0 text-white text-base font-light tracking-[2.24px] uppercase py-[6px] px-[18px]">
+                                <a href="#">                                    
+                                    <i class="ri-instagram-fill"></i>
+                                    Instagram
+                                </a>
+                            </div>
+                        </div>
+                        <div class="px-5 py-6">
+                            <div class="mb-4">
+                                Jun 12, 2023 
+                            </div>
+                            <h4 class="h4 mb-[10px]">
+                                Activity Name Lorem
+                            </h4>
+                            <p class="font-light text-sm">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Rem officiis fugiat cumque aut odio accusantium officia dolorum...
+                                <a href="#" class="underline text-primary">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog__post max-w-[420px] shadow-custom2 rounded-lg overflow-hidden cursor-pointer group">
+                        <div class="relative overflow-hidden w-full max-h-[300px]">
+                            <img class="group-hover:scale-110 transition-all object-cover object-bottom duration-500" src="./assets/img/IMG_20240622_200257_605.JPG" alt="">
+                            <div class="bg-accent-teritiary absolute bottom-0 left-0 text-white text-base font-light tracking-[2.24px] uppercase py-[6px] px-[18px]">
+                                <a href="#">                                    
+                                    <i class="ri-instagram-fill"></i>
+                                    Instagram
+                                </a>
+                            </div>
+                        </div>
+                        <div class="px-5 py-6">
+                            <div class="mb-4">
+                                Jun 12, 2023 
+                            </div>
+                            <h4 class="h4 mb-[10px]">
+                                Activity Name Lorem
+                            </h4>
+                            <p class="font-light text-sm">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Rem officiis fugiat cumque aut odio accusantium officia dolorum...
+                                <a href="#" class="underline text-primary">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog__post max-w-[420px] shadow-custom2 rounded-lg overflow-hidden cursor-pointer group">
+                        <div class="relative overflow-hidden w-full max-h-[300px]">
+                            <img class="group-hover:scale-110 transition-all object-cover object-center duration-500" src="./assets/img/IMG_20240622_200257_025.JPG" alt="">
+                            <div class="bg-accent-teritiary absolute bottom-0 left-0 text-white text-base font-light tracking-[2.24px] uppercase py-[6px] px-[18px]">
+                                <a href="#">                                    
+                                    <i class="ri-instagram-fill"></i>
+                                    Instagram
+                                </a>
+                            </div>
+                        </div>
+                        <div class="px-5 py-6">
+                            <div class="mb-4">
+                                Jun 12, 2023 
+                            </div>
+                            <h4 class="h4 mb-[10px]">
+                                Activity Name Lorem
+                            </h4>
+                            <p class="font-light text-sm">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Rem officiis fugiat cumque aut odio accusantium officia dolorum...
+                                <a href="#" class="underline text-primary">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- BLOG SECTION END -->
 
         <!-- FOOTER SECTION START -->
         <footer class="footer pt-12 xl:pt-[150px] bg-primary bg-opacity-5">
@@ -846,17 +980,5 @@
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/scrollreveal.min.js"></script>
         <script src="js/main.js"></script>
-        <script>
-                const swiper = new Swiper('.swiper', {
-
-                    loop: true,
-
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-
-                    });
-        </script>
     </body>
 </html>

@@ -46,3 +46,15 @@ document.onkeydown = function(event) {
         })
     }
 };
+
+// JS FOR SWIPPER
+const swiper = new Swiper('.swiper', {
+
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+});
