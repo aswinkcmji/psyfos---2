@@ -85,9 +85,21 @@ sr.reveal('.services',{
     iterval: 80,
     origin: 'top',
 });
-sr.reveal('.service__top',{
+sr.reveal('.why__choose',{
     delay: 100,
     distance: '100px',
+    iterval: 80,
+    origin: 'top',
+});
+sr.reveal('.why__choose-head',{
+    delay: 100,
+    distance: '150px',
+    iterval: 80,
+    origin: 'top',
+});
+sr.reveal('.why__choose-text',{
+    delay: 100,
+    distance: '70px',
     iterval: 80,
     origin: 'top',
 });
@@ -120,3 +132,26 @@ sr.reveal('.blog__post', {
     iterval: 80,
     origin: 'bottom', 
 })
+
+sr.reveal('.career__title', {
+    delay: 100,
+    distance: '50px',
+    iterval: 80,
+    origin: 'top', 
+})
+
+sr.reveal('.career__text', {
+    delay: 100,
+    distance: '50px',
+    iterval: 80,
+    origin: 'bottom', 
+})
+
+sr.reveal('.career__img', {
+    delay: 100,
+    distance: '100px',
+    iterval: 80,
+    origin: 'top', 
+})
+
+document.getElementById("year").innerHTML = new Date().getFullYear();

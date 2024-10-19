@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,13 +48,16 @@
                                     <a href="#home" class="text-gray-500 hover:text-primary transition-all duration-300">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#services" class="text-gray-500 hover:text-primary transition-all duration-300">About us</a>
+                                    <a href="#about" class="text-gray-500 hover:text-primary transition-all duration-300">About us</a>
                                 </li>
                                 <li>
                                     <a href="#services" class="text-gray-500 hover:text-primary transition-all duration-300">Services</a>
                                 </li>
                                 <li>
                                     <a href="#team" class="text-gray-500 hover:text-primary transition-all duration-300">Our Team</a>
+                                </li>
+                                <li>
+                                    <a href="#career" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">Career</a>
                                 </li>
                                 <li>
                                     <a href="#gallery" class="text-gray-500 hover:text-primary transition-all duration-300">Activities</a>
@@ -74,13 +77,16 @@
                                 <a href="#home" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">Home</a>
                             </li>
                             <li>
-                                <a href="#services" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">About us</a>
+                                <a href="#about" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">About us</a>
                             </li>
                             <li>
                                 <a href="#services" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">Services</a>
                             </li>
                             <li>
                                 <a href="#team" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="#career" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">Career</a>
                             </li>
                             <li>
                                 <a href="#gallery" class="border-r pr-4 text-gray-500 hover:text-primary font-light transition-all duration-300">Activities</a>
@@ -124,19 +130,56 @@
         
         <!-- HERO SECTION END -->
 
-        <!-- SERVICE SECTION START -->
 
-        <section id="services" class="services mb-[50px]">
-            <div style="background-image: url('./assets/img/backgound/background-2.jpg');" class="bg-cover bg-no-repeat rounded-[20px] max-w-[1466px] mx-4 xl:mx-auto xl:pt-[70px] px-6 xl:px-0 relative min-h-[200px] flex items-center xl:items-start -z-10 py-10 ">
+        <!-- WHY SECTION START -->
+
+        <section id="about" class="mb-[50px]">
+            <div style="background-image: url('./assets/img/backgound/background-2.jpg');" class="why__choose bg-cover bg-no-repeat rounded-[20px] max-w-[1466px] mx-4 xl:mx-auto xl:pt-[70px] px-6 xl:px-0 relative min-h-[200px] flex items-center xl:items-start -z-10 py-10 ">
                 <div class="container mx-auto">
-                    <div class="service__top flex items-center flex-col xl:flex-row xl:mb-[60px]">
+                    <div class="why__choose-head flex items-center flex-col xl:flex-row xl:mb-[60px]">
                         <h2 class="h2 text-white pr-4">Why choose us?</h2>
-                        
                     </div>
                 </div>
             </div>
-            <div class="container mx-auto mt-8 md:-mt-[28px] lg:-mt-[48px] xl:-mt-[98px]">
-                <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5 xl:p-0">
+            <div class="container mx-auto mt-2 sm:-mt-8 md:-mt-7 lg:-mt-12 xl:-mt-20">
+                <div class="grid md:grid-cols-3 grid-cols-1 gap-2">
+                    <div class="px-5 py-10 bg-white shadow-custom1 rounded-lg">
+                        <div class="p-4">
+                            <h1 class="why__choose-text text-center my-auto text-primary text-3xl font-semibold">
+                                6000+ <span class="text-secondary text-xl">happy clients</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="px-5 py-10 bg-white shadow-custom1 rounded-lg">
+                        <div class="p-4">
+                            <h1 class="why__choose-text text-center my-auto text-primary text-3xl font-semibold">
+                                Non judgemental <span class="text-secondary text-xl">approach</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="px-5 py-10 bg-white shadow-custom1 rounded-lg">
+                        <div class="p-4">
+                            <h1 class="why__choose-text text-center my-auto text-primary text-3xl font-semibold">
+                                Experienced and trained <span class="text-secondary text-xl">psychologist</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY SECTION START -->
+
+
+        <!-- SERVICE SECTION START -->
+
+
+        <section id="services" class="services mb-[50px]">
+            <div class="container mx-auto">
+                <h2 class="team__title h2 mb-[50px] text-center xl:text-left">
+                    Our Services
+                </h2>
+                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-5 xl:p-0">
                     <div class="service__item" onclick="openModal('service-1')">
                         <div class="mb-[15px]">
                             <i class="ri-psychotherapy-fill text-[2.5rem] text-primary text-opacity-75 "></i>
@@ -244,6 +287,21 @@
                             to create more effective and harmonious workplaces.
                         </p>
                     </div>
+
+                    <div class="service__item" onclick="openModal('service-9')">
+                        <div class="mb-[15px]">
+                            <!-- <i class="ri-suitcase-fill text-[2.5rem] text-primary text-opacity-75"></i> -->
+                            <i class="ri-stairs-fill text-[2.5rem] text-primary text-opacity-75"></i>
+                        </div>
+                        <h3 class="h3 mb-[10px]">
+                            Internship in Clinical Psychology
+                        </h3>
+                        <p class="font-light leading-normal max-w-[300px]">
+                            The Clinical Psychology Internship provides hands-on 
+                            experience in assessment and treatment for students and 
+                            early professionals.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -331,7 +389,7 @@
                             <div class="flex-1 flex flex-col sm:flex-row shadow-custom1 rounded-b-md gap-8">
                                 <div class="flex sm:flex-[0.5] flex-col xl:flex-row items-start xl:items-center text-left gap-[30px]">
                                     <div class="flex-1">
-                                        <img class="min-w-48 h-auto object-cover rounded-t-md" src="assets/img/team/unknown.jpg" alt="">
+                                        <img class="min-w-48 h-auto object-cover rounded-t-md" src="assets/img/team/nihala.jpg" alt="">
                                     </div>
                                     <div class="flex-1 flex flex-col p-2">
                                         <h4 class="h4 mb-[10px]">Aaisha Nihala T</h4>
@@ -433,7 +491,7 @@
                             <div class="flex-1 flex flex-col sm:flex-row shadow-custom1 rounded-b-md gap-8">
                                 <div class="flex sm:flex-[0.5] flex-col xl:flex-row items-start xl:items-center text-left gap-[30px]">
                                     <div class="flex-1">
-                                        <img class="min-w-48 h-auto object-cover rounded-t-md" src="assets/img/team/unknown.jpg" alt="">
+                                        <img class="min-w-48 h-auto object-cover rounded-t-md" src="assets/img/team/nihala.jpg" alt="">
                                     </div>
                                     <div class="flex-1 flex flex-col p-2">
                                         <h4 class="h4 mb-[10px]">Aaisha Nihala T</h4>
@@ -455,6 +513,37 @@
         </section>
 
         <!-- TEAM SECTION END -->
+        
+        
+        <!-- CAREER SECTION START -->
+
+        <section id="career" class="career">
+            <div class="container mx-auto">
+                <h2 class="career__title h2 mb-[50px] text-center xl:text-left">
+                    Career Opportunities
+                </h2>
+                <div>
+                    <div class="grid md:grid-cols-2 grid-cols-1 gap-x-5">
+                        <div class="career__img w-full h-full">
+                            <img src="/assets/img/Questions-pana.svg" alt="" srcset="">
+                        </div>
+                        <div class="career__text flex flex-col justify-evenly gap-y-10 md:gap-0">
+                            <p>
+                                At PsyFos, we are committed to fostering mental health and well-being for individuals and communities alike. 
+                                We are always on the lookout for dedicated, empathetic professionals who share our vision of creating a positive 
+                                impact in the mental health space. Whether you're an experienced practitioner or beginning your career, 
+                                PsyFos offers a dynamic environment for growth, collaboration, and meaningful work.
+                                Join us and contribute to a supportive community where mental health and wellness are prioritized. 
+                                Explore our career opportunities and help build a healthier, more resilient future for everyone.
+                            </p>
+                            <p>Send your resume to <a href="mailto: psyfosofficial@gmail.com." class="text-primary underline hover:text-opacity-75">psyfosofficial@gmail.com.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAREER SECTION END -->
 
         <!-- BLOG SECTION START -->
         
@@ -464,6 +553,27 @@
                     Our recent activities
                 </h2>
                 <div class="flex flex-row gap-6 justify-center xl:gap-3 mb-[50px] flex-wrap">
+                    <div class="blog__post max-w-[420px] shadow-custom2 rounded-lg overflow-hidden">
+                        <div class="relative overflow-hidden w-full max-h-[300px] shadow-custom1 cursor-pointer group">
+                            <img class="group-hover:scale-110 transition-all object-cover object-center duration-500" src="./assets/img/blog/blog-5.jpg" alt="">
+                            <div class="bg-accent-teritiary absolute bottom-0 left-0 text-white text-base font-light tracking-[2.24px] uppercase py-[6px] px-[18px]">
+                                <a href="https://www.instagram.com/p/C_vZQwOtPG0/">                                    
+                                    <i class="ri-instagram-fill"></i>
+                                    Instagram
+                                </a>
+                            </div>
+                        </div>
+                        <div class="px-5 py-6">
+                            <h4 class="h4 mb-[10px]">
+                                World Suicide Prevention Day
+                            </h4>
+                            <!-- <p class="font-light text-sm">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Rem officiis fugiat cumque aut odio accusantium officia dolorum...
+                                <a href="#" class="underline text-primary">Read more</a>
+                            </p> -->
+                        </div>
+                    </div>
                     <div class="blog__post max-w-[420px] shadow-custom2 rounded-lg overflow-hidden">
                         <div class="relative overflow-hidden w-full max-h-[300px] shadow-custom1 cursor-pointer group">
                             <img class="group-hover:scale-110 transition-all object-cover object-center duration-500" src="./assets/img/blog/blog-1.jpeg" alt="">
@@ -591,9 +701,10 @@
                         </h4>
                         <div>
                             <ul class="space-y-4 font-light text-gray-500 ">
-                                <li><a href="#home" class="hover:text-primary transition-all">Home</a></li>
+                                <li><a href="#about" class="hover:text-primary transition-all">About</a></li>
                                 <li><a href="#services" class="hover:text-primary transition-all">Services</a></li>
                                 <li><a href="#team" class="hover:text-primary transition-all">Team</a></li>
+                                <li><a href="#career" class="hover:text-primary transition-all">Career</a></li>
                                 <li><a href="#gallery" class="hover:text-primary transition-all">Activities</a></li>
                             </ul>
                         </div>
@@ -604,26 +715,18 @@
                         </h4>
                         <div class="flex flex-col gap-y-6">
                             <div class="flex border-b border-gray-200 font-light text-gray-500 justify-between">
-                                <div>Monday - Wednesday</div>
-                                <div class="text-primary">8:00 AM - 6:00PM</div>
-                            </div>
-                            <div class="flex border-b border-gray-200 font-light text-gray-500 justify-between">
-                                <div>Thursday - Saturday</div>
-                                <div class="text-primary">7:00 AM - 1:00PM</div>
+                                <div>Monday - Saturday</div>
+                                <div class="text-primary">9:00 AM - 5:00PM</div>
                             </div>
                             <div class="flex border-b border-gray-200 font-light text-gray-500 justify-between">
                                 <div>Sunday</div>
                                 <div class="text-primary">Week Off</div>
                             </div>
-                            <div class="flex border-b border-gray-200 font-light text-gray-500 justify-between">
-                                <div>Personal</div>
-                                <div class="text-primary">7:00 AM - 1:00PM</div>
-                            </div>
-                            
                         </div>
                     </div>
                 </div>
             </div>
+            <p class="text-sm text-center text-opacity-25 text-secondary" >© Copyrights <span id="year"></span> by psyfos.in All rights reserved.</p>
         </footer>
         <!-- FOOTER SECTION END -->
 
@@ -960,6 +1063,55 @@
                         <p>
                             Tailored programs to meet your specific business needs.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICE 9 MODAL -->
+
+        <div id="service-9" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4 ">
+            <div class="relative top-[50%] translate-y-[-50%] mx-auto shadow-xl rounded-md bg-white max-w-xl p-1">
+                <div class="flex justify-between p-2 border-b items-center">
+                    <h2 class="text-lg font-medium">
+                        Kickstart Your Clinical Psychology Career
+                    </h2>
+                    <hr class="border-b"/>
+                    <button onclick="closeModal('service-9')" type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                        <i class="ri-close-line text-2xl"></i>
+                    </button>
+                </div>
+                <div class="p-2 text-sm font-light flex flex-col gap-y-4">
+                    <div>
+                        <p>
+                            Our Clinical Psychology Internship Program provides hands-on experience, helping you bridge the gap between theory and practice. Ideal for psychology students or recent graduates, this internship offers invaluable exposure to
+                        </p>
+                    </div>
+                    <div>
+                        <h1 class="text-base font-medium">
+                            Psychological Assessments
+                        </h1>
+                        <p>
+                            Learn to conduct and interpret diagnostic tests.
+                            Therapeutic Techniques: Get trained in evidence-based methods such as Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), and similar therapeutic approaches.
+                        </p>
+                    </div>
+                    <div>
+                        <h1 class="text-base font-medium">
+                            Key Benefits
+                        </h1>
+                        <ul class="list-none">
+                            <li>
+                                ▪️ Expert Guidance: Work closely with licensed clinical and consultant psychologists.
+                            </li>
+                            <li>
+                                ▪️ Career Mentorship: Receive personalized advice on education and career paths.
+                            </li>
+                            <li>
+                                ▪️ Eligibility: Open to current students or recent graduates in psychology.
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
