@@ -709,6 +709,18 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1155,6 +1167,11 @@ video {
   padding-bottom: 6px;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1277,20 +1294,12 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-opacity-75 {
-  --tw-text-opacity: 0.75;
-}
-
-.text-opacity-15 {
-  --tw-text-opacity: 0.15;
-}
-
-.text-opacity-20 {
-  --tw-text-opacity: 0.2;
-}
-
 .text-opacity-25 {
   --tw-text-opacity: 0.25;
+}
+
+.text-opacity-75 {
+  --tw-text-opacity: 0.75;
 }
 
 .underline {
